@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e58ce2b3-78e2-47ed-af8f-9b7881ea2ce8" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deal.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-122">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bet.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/poker/bet.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core_test.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>deal-hand</find>
+      <find>:value</find>
+      <find>assoc</find>
+      <find>deal-players</find>
+      <find>range</find>
+      <find>can-turn?</find>
+      <find>print-han</find>
+      <find>if</find>
+      <find>:current-bet</find>
+      <find>current</find>
+      <find>colorize</find>
+      <find>color</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>deal-game</replace>
+      <replace>:to-call</replace>
+    </replaceStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/poker/cards.clj" />
+        <option value="$PROJECT_DIR$/src/poker/input.clj" />
+        <option value="$PROJECT_DIR$/src/poker/core.clj" />
+        <option value="$PROJECT_DIR$/src/poker/deal.clj" />
+        <option value="$PROJECT_DIR$/test/poker/core_test.clj" />
+        <option value="$PROJECT_DIR$/src/poker/bet.clj" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="869" />
+    <option name="y" value="146" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="poker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="poker" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="cursive.last.file.extension./Users/gthompson/workspace/poker/src" value="clj" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="ReplState" timestamp="1526914776231">{:repl-history {:ide [], :local [{:command &quot;(+ (:value (first (take 2 deck))) (:value (last (take 2 deck))))&quot;, :offset 64, :ns &quot;poker.cards&quot;} {:command &quot;(score-hand (take 2 deck))&quot;, :offset 26, :ns &quot;poker.cards&quot;} {:command &quot;(take 2 deck)&quot;, :offset 13, :ns &quot;poker.cards&quot;} {:command &quot;(hand (take 2 deck))&quot;, :offset 20, :ns &quot;poker.cards&quot;} {:command &quot;(get-input \&quot;foo\&quot;)&quot;, :offset 17, :ns &quot;poker.cards&quot;} {:command &quot;(get-input)&quot;, :offset 11, :ns &quot;poker.cards&quot;} {:command &quot;(read-line)&quot;, :offset 11, :ns &quot;poker.cards&quot;} {:command &quot;(defn print-hand\n  [hand]\n  (println \&quot;Cards: \&quot; (:suit (first hand))))&quot;, :offset 69, :ns &quot;poker.cards&quot;} {:command &quot;(print-card (take 1 deck))&quot;, :offset 26, :ns &quot;poker.cards&quot;} {:command &quot;(print-card (first (take 1 deck)))&quot;, :offset 34, :ns &quot;poker.cards&quot;} {:command &quot;(print-hand (hand (take 2 deck)))&quot;, :offset 33, :ns &quot;poker.cards&quot;} {:command &quot;(deal-hand deck)&quot;, :offset 16, :ns &quot;poker.cards&quot;} {:command &quot;(count (deal-hand [] deck))&quot;, :offset 27, :ns &quot;poker.cards&quot;} {:command &quot;(count (last (deal-hand [] deck)))&quot;, :offset 34, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (deal-hand [] deck))&quot;, :offset 65, :ns &quot;poker.cards&quot;} {:command &quot;(inc 4)&quot;, :offset 7, :ns &quot;poker.cards&quot;} {:command &quot;(range 1 (inc num))&quot;, :offset 19, :ns &quot;poker.cards&quot;} {:command &quot;(range 1 (inc 4))&quot;, :offset 17, :ns &quot;poker.cards&quot;} {:command &quot;(count :deck (deal-players 4 deck))&quot;, :offset 35, :ns &quot;poker.cards&quot;} {:command &quot;(count (:hands (deal-players 4 deck)))&quot;, :offset 38, :ns &quot;poker.cards&quot;} {:command &quot;(count (:deck (deal-players 4 deck)))&quot;, :offset 37, :ns &quot;poker.cards&quot;} {:command &quot;(count deck)&quot;, :offset 12, :ns &quot;poker.cards&quot;} {:command &quot;(deal-hand [] deck)&quot;, :offset 19, :ns &quot;poker.cards&quot;} {:command &quot;(first (deal-hand [] deck))&quot;, :offset 27, :ns &quot;poker.cards&quot;} {:command &quot;[(first (deal-hand [] deck)) (first (deal-hand [] deck))]&quot;, :offset 57, :ns &quot;poker.cards&quot;} {:command &quot;[(first (deal-hand [] deck)) [] (first (deal-hand [] deck))]&quot;, :offset 60, :ns &quot;poker.cards&quot;} {:command &quot;(merge (first (deal-hand [] deck)) [])&quot;, :offset 38, :ns &quot;poker.cards&quot;} {:command &quot;(merge (first (deal-hand [] deck)) (merge (first (deal-hand [] deck)) []))&quot;, :offset 74, :ns &quot;poker.cards&quot;} {:command &quot;(merge [(first (deal-hand [] deck))] (merge (first (deal-hand [] deck)) []))&quot;, :offset 76, :ns &quot;poker.cards&quot;} {:command &quot;(concat [(first (deal-hand [] deck))] (concat (first (deal-hand [] deck)) []))&quot;, :offset 78, :ns &quot;poker.cards&quot;} {:command &quot;(concat [(first (deal-hand [] deck))] (concat [(first (deal-hand [] deck))] []))&quot;, :offset 80, :ns &quot;poker.cards&quot;} {:command &quot;(concat [(first (deal-hand [] deck))] [])&quot;, :offset 41, :ns &quot;poker.cards&quot;} {:command &quot;(merge [(first (deal-hand [] deck))] (merge [(first (deal-hand [] deck))] []))&quot;, :offset 78, :ns &quot;poker.cards&quot;} {:command &quot;(merge [(first \n            (deal-hand [] deck))] \n         (merge [(first \n                   (deal-hand [] deck))] []))&quot;, :offset 121, :ns &quot;poker.cards&quot;} {:command &quot;(def deck (shuffle (deck ranks suits)))&quot;, :offset 39, :ns &quot;poker.cards&quot;} {:command &quot;(deal-players 4 deck)&quot;, :offset 21, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (deal-players 4 deck))&quot;, :offset 67, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)]\n    (deal-hand deck []))&quot;, :offset 55, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (deal-hand deck [])]\n    hand)&quot;, :offset 73, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (deal-hand deck [])]\n    (get-bet hand []))&quot;, :offset 86, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (deal-hand deck [])]\n    (get-bet hand [] 10))&quot;, :offset 89, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (first (deal-hand deck []))]\n    (get-bet hand [] 10))&quot;, :offset 97, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (first (deal-hand deck []))]\n    (print-hand (get-bet hand [] 10)))&quot;, :offset 110, :ns &quot;poker.cards&quot;} {:command &quot;(is-pair?\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}])&quot;, :offset 99, :ns &quot;poker.cards&quot;} {:command &quot;(is-pair?\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :king, :value 12}])&quot;, :offset 98, :ns &quot;poker.cards&quot;} {:command &quot;(is-pair?\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :hearts, :rank :two, :value 13}\n     {:suit :hearts, :rank :three, :value 13}\n     {:suit :hearts, :rank :four, :value 13}])&quot;, :offset 235, :ns &quot;poker.cards&quot;} {:command &quot;(deftest is-pair-test-with-community\n  (testing \&quot;Pair with community card\&quot;\n    (is (is-pair?\n          [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n          [{:suit :hearts, :rank :king, :value 13}\n           {:suit :hearts, :rank :three, :value 3}\n           {:suit :hearts, :rank :four, :value 4}]))))&quot;, :offset 344, :ns &quot;poker.core-test&quot;} {:command &quot;(into []\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :hearts, :rank :king, :value 13}\n     {:suit :hearts, :rank :three, :value 13}\n     {:suit :hearts, :rank :four, :value 13}])&quot;, :offset 235, :ns &quot;poker.cards&quot;} {:command &quot;(conj\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :hearts, :rank :king, :value 13}\n     {:suit :hearts, :rank :three, :value 13}\n     {:suit :hearts, :rank :four, :value 13}])&quot;, :offset 232, :ns &quot;poker.cards&quot;} {:command &quot;(concat\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :hearts, :rank :king, :value 13}\n     {:suit :hearts, :rank :three, :value 13}\n     {:suit :hearts, :rank :four, :value 13}])&quot;, :offset 234, :ns &quot;poker.cards&quot;} {:command &quot;(type (concat\n          [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n          [{:suit :hearts, :rank :king, :value 13}\n           {:suit :hearts, :rank :three, :value 13}\n           {:suit :hearts, :rank :four, :value 13}]))&quot;, :offset 265, :ns &quot;poker.cards&quot;} {:command &quot;(is-pair?\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :hearts, :rank :king, :value 13}\n     {:suit :hearts, :rank :three, :value 13}\n     {:suit :hearts, :rank :four, :value 13}])&quot;, :offset 236, :ns &quot;poker.cards&quot;} {:command &quot;(get-bet [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}] [] 10)&quot;, :offset 100, :ns &quot;poker.cards&quot;} {:command &quot;(get-bet [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}] [] 100 10)&quot;, :offset 104, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (first (deal-hand deck []))]\n    (print-hand hand)\n    (get-bet hand [] 10))&quot;, :offset 119, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (first (deal-hand deck []))]\n    (print-hand hand)\n    (get-bet hand [] 100 10))&quot;, :offset 123, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-players players 3 deck)]\n      game))&quot;, :offset 178, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-players players deck)]\n      game))&quot;, :offset 176, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-players players deck)]\n      (count game)))&quot;, :offset 184, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-players players deck)]\n      (:hands game)))&quot;, :offset 185, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-game players deck)]\n      (:hands game)))&quot;, :offset 182, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-game players deck)]\n      game))&quot;, :offset 173, :ns &quot;poker.cards&quot;} {:command &quot;(rand-int 20)&quot;, :offset 13, :ns &quot;poker.cards&quot;} {:command &quot;(let [hands ({:cards [{:suit :clubs, :rank :seven, :value 7} {:suit :spades, :rank :six, :value 6}], :value 13, :bet 0}\n                {:cards [{:suit :clubs, :rank :nine, :value 9} {:suit :diamonds, :rank :ten, :value 10}], :value 19, :bet 0}\n                {:cards [{:suit :hearts, :rank :six, :value 6} {:suit :diamonds, :rank :king, :value 13}], :value 19, :bet 0}\n                {:cards [{:suit :clubs, :rank :ace, :value 14} {:suit :diamonds, :rank :nine, :value 9}], :value 23, :bet 0}\n                {:cards [{:suit :hearts, :rank :ace, :value 14} {:suit :clubs, :rank :jack, :value 11}], :value 25, :bet 0}\n                {:cards [{:suit :diamonds, :rank :jack, :value 11} {:suit :hearts, :rank :jack, :value 11}], :value 22, :bet 0})]\n    (remove (first hands) hands)\n    hands)&quot;, :offset 793, :ns &quot;poker.cards&quot;} {:command &quot;(let [hands ({:cards [{:suit :clubs, :rank :seven, :value 7} {:suit :spades, :rank :six, :value 6}], :value 13, :bet 0}\n                {:cards [{:suit :clubs, :rank :nine, :value 9} {:suit :diamonds, :rank :ten, :value 10}], :value 19, :bet 0}\n                {:cards [{:suit :hearts, :rank :six, :value 6} {:suit :diamonds, :rank :king, :value 13}], :value 19, :bet 0}\n                {:cards [{:suit :clubs, :rank :ace, :value 14} {:suit :diamonds, :rank :nine, :value 9}], :value 23, :bet 0}\n                {:cards [{:suit :hearts, :rank :ace, :value 14} {:suit :clubs, :rank :jack, :value 11}], :value 25, :bet 0}\n                {:cards [{:suit :diamonds, :rank :jack, :value 11} {:suit :hearts, :rank :jack, :value 11}], :value 22, :bet 0})]\n    (remove (first hands) hands))&quot;, :offset 783, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        hand (first (deal-hand deck []))]\n    (print-hand hand)\n    (remove (first hands) hands))&quot;, :offset 127, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game deck [])]\n    (print-hand (first (:hands game)))\n    )&quot;, :offset 108, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game deck [])]\n    (print-hand (first (:hands game))))&quot;, :offset 103, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game 4 deck)]\n    (print-hand (first (:hands game))))&quot;, :offset 102, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game 4 deck)]\n    (print-hand (first (:hands game)))\n    (remove (first hands) hands))&quot;, :offset 135, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game 4 deck)\n        hands ((:hands game))]\n    (print-hand (first hands))\n    (remove (first hands) hands))&quot;, :offset 157, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game 4 deck)\n        hands ((:hands game))]\n    (print-hand (first hands))\n    (remove (= hand 7) hands))&quot;, :offset 154, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (deck ranks suits)\n        game (deal-game 4 deck)\n        hands ((:hands game))]\n    (print-hand (first hands))\n    (remove (test? hand) hands))&quot;, :offset 156, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))]\n      (prompt-bets game)))&quot;, :offset 201, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))]\n      (if can-turn? game\n        (+1 2 3 )\n        (prompt-bets game))))&quot;, :offset 247, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))]\n      (if (can-turn? game)\n        (+1 2 3 )\n        (prompt-bets game))))&quot;, :offset 249, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))])\n    game)&quot;, :offset 185, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (bet-one-round (deal-game players deck))]\n      game))&quot;, :offset 189, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))]))&quot;, :offset 176, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (prompt-bets (deal-game players deck))]\n      game))&quot;, :offset 187, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-game players deck)]\n      (prompt-bets game)))&quot;, :offset 187, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-game players deck)]\n      (count (:deck (bet-and-turn game)))))&quot;, :offset 204, :ns &quot;poker.cards&quot;} {:command &quot;(defn prompt-bets\n  [game]\n  ;print game\n  (let [temp-game (bet-one-round game)]\n    (if (not (can-turn? temp-game))\n      (prompt-bets temp-game)\n      temp-game)))&quot;, :offset 165, :ns &quot;poker.cards&quot;} {:command &quot;(defn bet-one-round\n  [game]\n  (let [temp-game (assoc game :hands [])]\n    (reduce (fn [game hand]\n              (let [pot (:pot game)\n                    current-bet (:current-bet game)\n                    community (:community game)\n                    bet (get-bet hand community pot current-bet)]\n                (if (&gt;= bet current-bet)\n                  (assoc game :current-bet bet :pot (+ pot bet) :hands (concat [(assoc hand :bet bet)] (:hands game)))\n                  (assoc game :folded (concat [(assoc hand :bet bet)] (:folded game))))))\n            temp-game\n            (:hands game))))&quot;, :offset 601, :ns &quot;poker.cards&quot;} {:command &quot;(let [deck (shuffle (deck ranks suits))]\n    (println \&quot;How many players?\&quot;)\n    (let [players (Integer. (get-input \&quot;6\&quot;))\n          game (deal-game players deck)]\n      (bet-and-turn game)))&quot;, :offset 188, :ns &quot;poker.cards&quot;} {:command &quot;(let [game (deal-game 6 (shuffle (deck)))]\n    game)&quot;, :offset 52, :ns &quot;poker.core&quot;} {:command &quot;(let [game (deal-game 6 (shuffle (deck)))]\n    (print-game game)\n    game)&quot;, :offset 74, :ns &quot;poker.core&quot;} {:command &quot;(let [game (deal-game 6 (shuffle (deck)))]\n    (print-game game))&quot;, :offset 65, :ns &quot;poker.core&quot;} {:command &quot;(play-poker)&quot;, :offset 12, :ns &quot;poker.core&quot;} {:command &quot;(and (= 2 2) (&lt; 1 4))&quot;, :offset 21, :ns &quot;poker.core&quot;} {:command &quot;(seq 1 2 3 4 5)&quot;, :offset 15, :ns &quot;poker.core&quot;} {:command &quot;(concat 1 2 3 4 5)&quot;, :offset 18, :ns &quot;poker.core&quot;} {:command &quot;(concat \&quot;1\&quot; \&quot;2\&quot; \&quot;3\&quot;)&quot;, :offset 20, :ns &quot;poker.core&quot;} {:command &quot;(into [] 1 2 3 4 5)&quot;, :offset 19, :ns &quot;poker.core&quot;} {:command &quot;(vec 1 2 3 4)&quot;, :offset 13, :ns &quot;poker.core&quot;} {:command &quot;(range 1 4)&quot;, :offset 11, :ns &quot;poker.core&quot;} {:command &quot;(size (range 1 4))&quot;, :offset 18, :ns &quot;poker.core&quot;} {:command &quot;(len (range 1 4))&quot;, :offset 17, :ns &quot;poker.core&quot;} {:command &quot;(length (range 1 4))&quot;, :offset 20, :ns &quot;poker.core&quot;} {:command &quot;(count (range 1 4))&quot;, :offset 19, :ns &quot;poker.core&quot;} {:command &quot;(get-sets\n    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]\n    [{:suit :diamonds, :rank :king, :value 13}\n     {:suit :hearts, :rank :three, :value 3}\n     {:suit :hearts, :rank :four, :value 4}])&quot;, :offset 236, :ns &quot;poker.bet&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="Repl" type="ClojureREPL" factoryName="Local">
+      <setting name="replType" value="1" />
+      <module name="poker" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e58ce2b3-78e2-47ed-af8f-9b7881ea2ce8" name="Default" comment="" />
+      <created>1521246875682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521246875682</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="869" y="146" width="1440" height="877" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897698" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897698" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="127" width="1240" height="673" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897698" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39897698" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="100" y="127" width="1240" height="673" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/poker/bet.clj</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/poker/bet.clj</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="125" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>(rank sets)</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(concat card (rank sets))</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(:folded temp-game)</expression-string>
+        <language-id>Clojure</language-id>
+        <custom-info>clojure.lang.PersistentArrayMap</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(&lt; (:bet hand) current-bet)</expression-string>
+        <language-id>Clojure</language-id>
+        <custom-info>clojure.lang.PersistentArrayMap</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(:hands game)</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(= 1 num)</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(= bet current-bet)</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(+ pot (- bet pot))</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(- bet pot)</expression-string>
+        <language-id>Clojure</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/bet.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="137" column="6" lean-forward="false" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/input.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/bet.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="63" lean-forward="true" selection-start-line="117" selection-start-column="63" selection-end-line="117" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="89" lean-forward="false" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="89" lean-forward="true" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/input.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="532" column="6" lean-forward="false" selection-start-line="532" selection-start-column="6" selection-end-line="532" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/deal.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/poker/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/poker/bet.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>poker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Leiningen: clojure-complete:0.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
