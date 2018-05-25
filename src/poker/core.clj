@@ -1,5 +1,5 @@
 (ns poker.core
-  [:require [poker.deal :refer [deck deal-game bet-and-turn print-game]]
+  [:require [poker.deal :refer [deck deal-hands bet-and-turn print-game]]
             [poker.input :refer [get-int-input]]]
   (:gen-class))
 
@@ -26,6 +26,8 @@
 
   )
 
+
+; add stack to hand, don't throw the hands away between rounds, build the stack based on winnings
 ; match a bet if someone bets higher in the same round
 ; The button, where does betting start
 

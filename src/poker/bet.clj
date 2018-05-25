@@ -2,25 +2,62 @@
   [:require [poker.input :refer [get-int-input]]])
 
 
-(defn get-sets
-  [cards community]
-  (let [all-cards (concat cards community)
-        sets {}]
-    (reduce (fn [ranks card]
-              (let [rank (:rank card)]
-                (if (contains? ranks (:rank card))
-                  (assoc sets rank (concat card (rank sets)))
-                  (conj ranks rank))))
-            #{}
-            all-cards)
-    sets))
+(defn empty-rank-histogram
+  [cards]
+  (reduce (fn [histogram card]
+            (assoc histogram (:rank card) 0))
+          {}
+          cards))
+
+(defn empty-suit-histogram
+  [cards]
+  (reduce (fn [histogram card]
+            (assoc histogram (:suit card) 0))
+          {}
+          cards))
+
+(defn get-rank-histogram
+  [cards]
+  (reduce (fn [histogram card]
+            (let [rank (:rank card)]
+              (assoc histogram rank (+ 1 (rank histogram)))))
+          (empty-rank-histogram cards)
+          cards))
+
+(defn get-suit-histogram
+  [cards]
+  (reduce (fn [histogram card]
+            (let [suit (:suit card)]
+              (assoc histogram suit (+ 1 (suit histogram)))))
+          (empty-suit-histogram cards)
+          cards))
+
+(defn sequential-cards
+  [cards]
+  (let [sorted (sort-by :value cards)
+        first-card (take 1 sorted)
+        sequence {:last-value (:value first-card) :run 1 :long-run 1}]
+    (let [long-run (:long-run (reduce (fn [sequence card]
+                                        (let [card-value (:value card)
+                                              current-run (:run sequence)
+                                              long-run (:long-run sequence)]
+                                          (cond (= (:last-value sequence) card-value)
+                                                (assoc sequence :last-value card-value :run (+ 1 current-run) :long-run (max long-run (+ 1 current-run)))
+                                                :else
+                                                (assoc sequence :last-value card-value :run 1 :runs (concat (:runs sequence) [current-run])))))
+                                      sequence
+                                      (drop 1 sorted)))]
+      long-run)))
 
 (defn get-hand-rank-value
-  [hand community]
-  ;((if (is-pair? (:cards hand) community)
-  ;   100
-  ;   0))
-  )
+  [cards]
+  (let [rank-histogram (get-rank-histogram cards)
+        suit-hisogram (get-suit-histogram cards)
+        histogram (reverse (sort (vals rank-histogram)))
+        is-straght (> 4 (sequential-cards cards))
+        is-flush (> 4 (apply max (vals suit-hisogram)))]
+
+    ))
 
 (defn get-bet-from-player
   [pot to-call]
@@ -78,5 +115,32 @@
     [{:suit :diamonds, :rank :king, :value 13}
      {:suit :hearts, :rank :three, :value 3}
      {:suit :hearts, :rank :four, :value 4}])
+
+  (empty-histogram [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}])
+  (count (get-rank-histogram [{:suit :diamonds, :rank :king, :value 13}
+                              {:suit :hearts, :rank :three, :value 3}
+                              {:suit :hearts, :rank :four, :value 4}
+                              {:suit :hearts, :rank :king, :value 13}
+                              {:suit :diamonds, :rank :queen, :value 12}]))
+  (let [hist (get-suit-histogram [{:suit :hearts, :rank :king, :value 13}
+                                  {:suit :diamonds, :rank :queen, :value 12}
+                                  {:suit :diamonds, :rank :queen, :value 12}
+                                  {:suit :diamonds, :rank :queen, :value 12}
+                                  {:suit :diamonds, :rank :queen, :value 12}
+                                  {:suit :diamonds, :rank :king, :value 13}
+                                  {:suit :hearts, :rank :three, :value 3}
+                                  {:suit :hearts, :rank :four, :value 4}])]
+    (apply max (vals hist)))
+
+  (sequential-cards [
+               {:suit :diamonds, :rank :queen, :value 12}
+               {:suit :diamonds, :rank :queen, :value 12}
+               {:suit :diamonds, :rank :king, :value 13}
+               {:suit :hearts, :rank :three, :value 3}
+               {:suit :hearts, :rank :four, :value 4}
+                     {:suit :hearts, :rank :king, :value 13}
+                     {:suit :diamonds, :rank :queen, :value 12}
+                     {:suit :diamonds, :rank :jack, :value 11}])
+
 
   )
