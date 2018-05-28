@@ -1,5 +1,5 @@
-(ns poker.bet
-  [:require [poker.input :refer [get-int-input]]])
+(ns poker_clj.bet
+  [:require [poker_clj.input :refer [get-int-input]]])
 
 
 (defn empty-rank-histogram
@@ -35,36 +35,71 @@
 (defn sequential-cards
   [cards]
   (let [sorted (sort-by :value cards)
-        first-card (take 1 sorted)
+        first-card (first (take 1 sorted))
         sequence {:last-value (:value first-card) :run 1 :long-run 1}]
-    (let [long-run (:long-run (reduce (fn [sequence card]
-                                        (let [card-value (:value card)
-                                              current-run (:run sequence)
-                                              long-run (:long-run sequence)]
-                                          (cond (= (:last-value sequence) card-value)
-                                                (assoc sequence :last-value card-value :run (+ 1 current-run) :long-run (max long-run (+ 1 current-run)))
-                                                :else
-                                                (assoc sequence :last-value card-value :run 1 :runs (concat (:runs sequence) [current-run])))))
-                                      sequence
-                                      (drop 1 sorted)))]
+    (let [long-run (:long-run
+           (reduce (fn [sequence card]
+                    (let [last-value (:last-value sequence)
+                          current-run (:run sequence)
+                          long-run (:long-run sequence)
+                          card-value (:value card)]
+                      (cond (= 1 (- card-value last-value))
+                              (assoc sequence :last-value card-value :run (+ 1 current-run) :long-run (max long-run (+ 1 current-run)))
+                            (= 0 (- card-value last-value))
+                              sequence
+                            :else
+                              (assoc sequence :last-value card-value :run 1 :runs (concat (:runs sequence) [current-run])))))
+                  sequence
+                  (drop 1 sorted)))]
       long-run)))
 
-(defn get-hand-rank-value
-  [cards]
-  (let [rank-histogram (get-rank-histogram cards)
-        suit-hisogram (get-suit-histogram cards)
+(defn calculate-rank
+  [cards community]
+  (let [all-cards (concat cards community)
+        rank-histogram (get-rank-histogram all-cards)
+        suit-hisogram (get-suit-histogram all-cards)
         histogram (reverse (sort (vals rank-histogram)))
-        is-straght (> 4 (sequential-cards cards))
-        is-flush (> 4 (apply max (vals suit-hisogram)))]
-
+        is-straight (> (sequential-cards all-cards) 4)
+        is-flush (> (apply max (vals suit-hisogram)) 4)
+        is-quads (= [4 1] histogram)
+        is-full-house (= [3 2] histogram)
+        is-set (= 3 (first histogram))
+        is-two-pair (= [2 2 1] histogram)
+        is-pair (= [2 1 1 1] histogram)
+        high-card (first (sort-by :value cards))]
+        (cond
+          (and is-flush is-straight) :straigh-flush
+          (= true is-flush) :flush
+          (= true is-straight) :straight
+          (= true is-quads) :quads
+          (= true is-full-house) :full-house
+          (= true is-set) :set
+          (= true is-two-pair) :two-pair
+          (= true is-pair) :pair
+          :else :high-card)
     ))
+
+(defn get-bet-from-computer*
+  [hand community pot to-call]
+  (let [current-hand-rank (calculate-rank (:cards hand) community)]
+    (case (count community)
+      0 (cond
+          (:pair current-hand-rank) (* 2 pot)
+          ; TODO if there are 2 sequential high cards, call
+          (> (:score hand) 17) to-call)
+      1
+      2
+      3)))
+
+(defn get-bet-from-computer
+  [hand community pot to-call]
+  (max (:bet hand) (rand-int 20)))
 
 (defn get-bet-from-player
   [pot to-call]
   (println "Pot : " pot "To Call : " to-call)
   (println "What would you like to bet?")
   (get-int-input))
-
 
 ;value of best 5 cards (min 21, max 82)
 ;pair 100 x card value (min 200 + 15, max 1400 + 39)
@@ -76,11 +111,9 @@
 ;4 of a kind card value * 4 * 10,000,000 (min 80,000,000, max  560,000,000)
 (defn get-bet
   [hand community pot to-call]
-  ;(let [hand-value (+ (get-hand-rank-value (:cards hand) community) (:value hand))]
-  ;  hand-value)
   (if (:is-human hand)
     (get-bet-from-player pot to-call)
-    (max (:bet hand) (rand-int 20))))
+    (get-bet-from-computer hand community pot to-call)))
 
 (defn bet-one-round
   [game]
@@ -110,12 +143,6 @@
 
 (comment
 
-  (get-sets
-    [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}]
-    [{:suit :diamonds, :rank :king, :value 13}
-     {:suit :hearts, :rank :three, :value 3}
-     {:suit :hearts, :rank :four, :value 4}])
-
   (empty-histogram [{:suit :hearts, :rank :king, :value 13} {:suit :diamonds, :rank :queen, :value 12}])
   (count (get-rank-histogram [{:suit :diamonds, :rank :king, :value 13}
                               {:suit :hearts, :rank :three, :value 3}
@@ -132,15 +159,12 @@
                                   {:suit :hearts, :rank :four, :value 4}])]
     (apply max (vals hist)))
 
-  (sequential-cards [
-               {:suit :diamonds, :rank :queen, :value 12}
-               {:suit :diamonds, :rank :queen, :value 12}
-               {:suit :diamonds, :rank :king, :value 13}
-               {:suit :hearts, :rank :three, :value 3}
-               {:suit :hearts, :rank :four, :value 4}
-                     {:suit :hearts, :rank :king, :value 13}
-                     {:suit :diamonds, :rank :queen, :value 12}
-                     {:suit :diamonds, :rank :jack, :value 11}])
+  (calculate-rank
+    [{:suit :diamonds, :rank :queen, :value 12}
+     {:suit :diamonds, :rank :king, :value 13}]
+    [{:suit :hearts, :rank :three, :value 3}
+     {:suit :hearts, :rank :four, :value 4}
+     {:suit :hearts, :rank :king, :value 13}])
 
 
   )

@@ -1,6 +1,6 @@
-(ns poker.deal
+(ns poker_clj.deal
   [:require [clojure.set :as set]
-            [poker.bet :refer [bet-one-round]]])
+            [poker_clj.bet :refer [bet-one-round]]])
 
 (def suits [:hearts :diamonds :clubs :spades])
 (def ranks {:2 2
@@ -160,9 +160,13 @@
         community (:community game)]
     (cond
       (= 0 (count community))
+        ;burn
+        (drop 1 deck)
         ; flop
         (assoc game :community (concat (:community game) (take 3 deck)) :deck (drop 3 deck))
       :else
+        ;burn
+        (drop 1 deck)
         ; turn and river
         (assoc game :community (concat (:community game) (take 1 deck)) :deck (drop 1 deck)))))
 

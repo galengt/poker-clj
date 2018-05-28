@@ -1,4 +1,4 @@
-(ns poker.input)
+(ns poker_clj.input)
 
 (defn get-input
   "Waits for user to enter text and hit enter, then cleans the input"

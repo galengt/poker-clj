@@ -1,6 +1,6 @@
-(ns poker.core
-  [:require [poker.deal :refer [deck deal-hands bet-and-turn print-game]]
-            [poker.input :refer [get-int-input]]]
+(ns poker_clj.core
+  [:require [poker_clj.deal :refer [deck deal-hands bet-and-turn print-game]]
+            [poker_clj.input :refer [get-int-input]]]
   (:gen-class))
 
 (defn play-poker
