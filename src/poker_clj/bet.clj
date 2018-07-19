@@ -1,5 +1,6 @@
 (ns poker_clj.bet
-  [:require [poker_clj.input :refer [get-int-input]]])
+  [:require [poker_clj.input :refer [get-int-input]]
+            [poker_clj.output :refer [print-game]]])
 
 
 (defn empty-rank-histogram
@@ -119,6 +120,8 @@
   [game]
   (let [temp-game (assoc game :hands [])]
     (reduce (fn [game hand]
+              (if (:is-human hand)
+                (print-game game))
               (let [pot (:pot game)
                     to-call (:to-call game)
                     community (:community game)
@@ -133,6 +136,7 @@
                     (assoc game :hands (concat [(assoc hand :bet bet)] (:hands game)))
                   ; raise
                   (> bet to-call)
+                    ;TODO I think the raise in this case is (bet - current-bet), and that is what gets added to the pot
                     (assoc game :to-call bet :pot (+ pot bet) :hands (concat [(assoc hand :bet bet)] (:hands game)))
                   ; fold
                   (< bet to-call)

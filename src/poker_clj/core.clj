@@ -1,6 +1,7 @@
 (ns poker_clj.core
-  [:require [poker_clj.deal :refer [deck deal-hands bet-and-turn print-game]]
-            [poker_clj.input :refer [get-int-input]]]
+  [:require [poker_clj.deal :refer [deck deal-hands play-one-hand]]
+            [poker_clj.input :refer [get-int-input]]
+            [poker_clj.output :refer [print-game]]]
   (:gen-class))
 
 (defn play-poker
@@ -9,7 +10,7 @@
     (println "How many players?")
     (let [players (get-int-input 6)
           game (deal-hands players deck)]
-      (bet-and-turn game))))
+      (play-one-hand game))))
 
 (defn -main
   [& args]
@@ -27,7 +28,8 @@
   )
 
 
+; TODO to make multiround game
 ; add stack to hand, don't throw the hands away between rounds, build the stack based on winnings
 ; match a bet if someone bets higher in the same round
-; The button, where does betting start
+; Implement the "button", where does betting start
 

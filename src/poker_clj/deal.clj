@@ -1,6 +1,7 @@
 (ns poker_clj.deal
   [:require [clojure.set :as set]
-            [poker_clj.bet :refer [bet-one-round]]])
+            [poker_clj.bet :refer [bet-one-round]]
+            [poker_clj.output :refer [print-game]]])
 
 (def suits [:hearts :diamonds :clubs :spades])
 (def ranks {:2 2
@@ -43,86 +44,7 @@
   [cards community num]
   (let [score (score-hand cards community)
         is-human (= 1 num)]
-    (assoc {} :cards cards :value score :bet 0 :is-human is-human)))
-
-(def ansi-styles
-  {:red   "[31m"
-   :green "[32m"
-   :blue  "[34m"
-   :reset "[0m"})
-
-(defn ansi
-  "Produce a string which will apply an ansi style"
-  [style]
-  (str \u001b (style ansi-styles)))
-
-(defn colorize
-  "Apply ansi color to text"
-  [text color]
-  (str (ansi color) text (ansi :reset)))
-
-(defn print-card
-  [card]
-  (cond
-    (or (= (:suit card) :hearts) (= (:suit card) :diamonds))
-      (println (:rank card) " of " (colorize (:suit card) :red))
-    :else
-      (println (:rank card) " of " (colorize (:suit card) :reset))))
-
-(defn print-hand
-  [hand]
-  (if (:is-human hand)
-    (println "This is you"))
-  (println "Cards:")
-  (print-card (first (:cards hand)))
-  (print-card (last (:cards hand)))
-  (print "Bet: ")
-  (println (:bet hand))
-  (doseq [i (range 1 30)]
-    (print "-"))
-  (println))
-
-(defn print-hands
-  [hands]
-  (println "Hands:")
-  (println)
-  (reduce (fn [foo hand]
-               (print-hand hand))
-             []
-             hands))
-
-(defn print-community
-  [cards]
-  (println "Community Cards:")
-  (reduce (fn [foo card]
-            (print-card card))
-          []
-          cards)
-  (doseq [i (range 1 30)]
-    (print "+-"))
-  (println))
-
-(defn print-bets
-  [game]
-  (println "Pot: ")
-  (println (:pot game))
-  (println "To Call: ")
-  (println (:to-call game))
-  (doseq [i (range 1 30)]
-    (print "+-"))
-  (println))
-
-(defn print-game
-  [game]
-  (println)
-  (println)
-  (println)
-  (println)
-  (println)
-  (print-community (:community game))
-  (print-bets game)
-  (print-hands (:hands game)))
-
+    (assoc {} :cards cards :value score :bet 0 :is-human is-human :number num)))
 
 (defn deal-hand
   [deck community num]
@@ -168,9 +90,10 @@
         ;burn
         (drop 1 deck)
         ; turn and river
-        (assoc game :community (concat (:community game) (take 1 deck)) :deck (drop 1 deck)))))
+        (assoc game :community (concat (:community game) (take 1 deck)) :deck (drop 1 deck))))
+  game)
 
-(defn bet-and-turn
+(defn play-one-hand
   [game]
   (let [temp-game {:hands [] :community []  :pot 0 :to-call 0 :deck deck :folded []}]
     (reduce (fn [played-game round-num]
@@ -184,6 +107,7 @@
                   :folded (:folded one-round-of-game)
                   :deck (:deck one-round-of-game))))
             game
+            ; pre-flop, flop, turn, river
             (range 0 3))))
 
 (comment
@@ -191,7 +115,7 @@
     (println "How many players?")
     (let [players (Integer. (get-input "6"))
           game (deal-hands players deck)]
-      (bet-and-turn game)))
+      (play-one-hand game)))
 
 
 
