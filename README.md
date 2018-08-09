@@ -1,14 +1,7 @@
 # poker-clj
 
-A Clojure library designed to ... well, that part is up to you.
+Just playing around - single player against what are currently not smart AI oppenents.
 
 ## Usage
 
-FIXME
-
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Run from the command line with Leiningen.
