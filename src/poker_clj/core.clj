@@ -18,16 +18,6 @@
   (play-poker))
 
 
-(comment
-
-  (play-poker)
-
-  (let [game (deal-hands 6 (shuffle (deck)))]
-    (print-game game))
-
-  )
-
-
 ; TODO to make multiround game
 ; add stack to hand, don't throw the hands away between rounds, build the stack based on winnings
 ; match a bet if someone bets higher in the same round
