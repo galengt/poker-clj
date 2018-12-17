@@ -26,9 +26,8 @@
 
 (defn print-hand
   [hand]
-  (if (:is-human hand)
-    (println "This is you"))
-  (println "Number:" (:number hand))
+  (println "Number:" (:num hand))
+  (println (type hand))
   (println "Cards:")
   (print-card (first (:cards hand)))
   (print-card (last (:cards hand)))

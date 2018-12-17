@@ -14,13 +14,11 @@
   (testing "One dealt hand"
     (is (= (:cards (first (deal-hand test-deck [] 1)))
            [{:suit :spades, :rank :5, :value 5} {:suit :hearts, :rank :3, :value 3}]))
-    (is (= (:value (first (deal-hand test-deck [] 1)))
+    (is (= (:score (first (deal-hand test-deck [] 1)))
            8))
     (is (= (:bet (first (deal-hand test-deck [] 1)))
            0))
-    (is (= (:is-human (first (deal-hand test-deck [] 1)))
-           true))
-    (is (= (:number (first (deal-hand test-deck [] 1)))
+    (is (= (:num (first (deal-hand test-deck [] 1)))
            1))))
 
 

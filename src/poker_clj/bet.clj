@@ -1,6 +1,7 @@
 (ns poker_clj.bet
   [:require [poker_clj.input :refer [get-int-input]]
-            [poker_clj.output :refer [print-game]]])
+            [poker_clj.output :refer [print-game]]
+            [poker_clj.deal :refer :all]])
 
 
 (defn empty-rank-histogram
@@ -92,16 +93,6 @@
       2
       3)))
 
-(defn get-bet-from-computer
-  [hand community pot to-call]
-  (max (:bet hand) (rand-int 20)))
-
-(defn get-bet-from-player
-  [pot to-call]
-  (println "Pot : " pot "To Call : " to-call)
-  (println "What would you like to bet?")
-  (get-int-input))
-
 ;value of best 5 cards (min 21, max 82)
 ;pair 100 x card value (min 200 + 15, max 1400 + 39)
 ;2 pair 300 x card + 300 x card (min 1500 + 4, max 8100 + 12)
@@ -110,39 +101,6 @@
 ;flush 100000 x high card (min 500,000, max 1,400,000)
 ;full house (pair value + 3 of kind value) * 1000 (min 11,500,000 max 78,100,000)
 ;4 of a kind card value * 4 * 10,000,000 (min 80,000,000, max  560,000,000)
-(defn get-bet
-  [hand community pot to-call]
-  (if (:is-human hand)
-    (get-bet-from-player pot to-call)
-    (get-bet-from-computer hand community pot to-call)))
-
-(defn bet-one-round
-  [game]
-  (let [temp-game (assoc game :hands [])]
-    (reduce (fn [game hand]
-              (if (:is-human hand)
-                (print-game game))
-              (let [pot (:pot game)
-                    to-call (:to-call game)
-                    community (:community game)
-                    current-bet (:bet hand)
-                    bet (get-bet hand community pot to-call)]
-                (cond
-                  ; call
-                  (and (= bet to-call) (not (= bet current-bet)))
-                    (assoc game :pot (+ pot bet) :hands (concat [(assoc hand :bet bet)] (:hands game)))
-                  ; already called
-                  (and (= bet to-call) (= bet current-bet))
-                    (assoc game :hands (concat [(assoc hand :bet bet)] (:hands game)))
-                  ; raise
-                  (> bet to-call)
-                    ;TODO I think the raise in this case is (bet - current-bet), and that is what gets added to the pot
-                    (assoc game :to-call bet :pot (+ pot bet) :hands (concat [(assoc hand :bet bet)] (:hands game)))
-                  ; fold
-                  (< bet to-call)
-                    (assoc game :folded (concat [(assoc hand :bet bet)] (:folded game))))))
-            temp-game
-            (:hands game))))
 
 
 (comment
